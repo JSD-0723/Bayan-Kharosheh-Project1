@@ -150,3 +150,51 @@ nav {
     font-size: 14px;
 }
 
+.search-result .row{
+    flex-wrap: wrap;
+    gap:1px;
+}
+
+.card-result{
+    width: 18%;
+    margin-top: 30px;
+    background-color: var(--bg_default);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-result .card-container{
+    width:90%;
+}
+
+.card-result img{
+    width:100%;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+.card-result h3{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-result h4{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-result .stars{
+    margin-bottom: 10px;
+
+}
+
+.card-result ion-icon{
+    color: rgb(229, 164, 33);
+}
+
+.card-result p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: var(--body-text);
+}
