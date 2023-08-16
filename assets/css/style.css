@@ -198,3 +198,17 @@ nav {
     margin-bottom: 15px;
     color: var(--body-text);
 }
+
+footer .container{
+  margin: 40px;  
+}
+
+footer .row{
+  justify-content: center;
+}
+
+footer ion-icon{
+  color: red;
+  font-size: 25px;
+  margin: 0px 10px;
+}
