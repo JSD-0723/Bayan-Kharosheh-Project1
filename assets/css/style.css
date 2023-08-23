@@ -13,7 +13,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: content-box;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -23,6 +22,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--body-text);
 }
 
 .container {
@@ -46,22 +46,35 @@ a {
 .btn {
   background-color: var(--bg_default);
   border: 1px var(--lines-color) solid;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 
+/* nav start */
+
 nav {
   padding: 20px 0px;
+  background-color: var(--bg_default);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
 }
 
 .link {
   color: var(--brand-primary);
+  font-weight: 400;
 }
 
 .nav-buttons .row {
   gap: 5px;
 }
+
+.nav-buttons ion-icon {
+  font-size: 14px;
+}
+
+/* nav end */
+
+/* title start */
 
 .title {
   position: relative;
@@ -72,22 +85,21 @@ nav {
 .blue_shape {
   width: 0;
   height: 0;
-  border-right: 1200px solid transparent;
-  border-bottom: 70px solid transparent;
-  border-top: 70px solid var(--brand-primary);
+  border-right: 90vw solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top: 65px solid #087aabf2;
   z-index: 1;
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0.7;
 }
 
 .green_shape {
   width: 0;
   height: 0;
-  border-left: 1200px solid transparent;
-  border-bottom: 70px solid transparent;
-  border-top: 70px solid var(--brand-secondary);
+  border-left: 90vw solid transparent;
+  border-bottom: 60px solid transparent;
+  border-top: 65px solid var(--brand-secondary);
   position: absolute;
   right: 0;
   top: 0;
@@ -102,113 +114,178 @@ nav {
   padding-bottom: 20px;
 }
 
-.title-content h1 {
+.title-content .title-welcome {
   color: var(--brand-secondary);
   font-size: 20px;
   font-weight: 700;
 }
 
-.search{
-    margin: 20px 0px;
-    background-color: var(--bg_default);
-    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+/* title end */
+
+/* search bar start */
+
+.search {
+  margin: 20px 0px;
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--bg_default);
 }
 
 .search .row {
   justify-content: center;
 }
 
-
-.search-bar{
-    padding: 0px 10px;
-    width:80%;
+.search-bar {
+  padding-left: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
 }
 
-.search-input{
-    width: 84%;
-    margin-left: 10px;
-    border:0;
-    font-size: 16px;
+.search-input {
+  width: 100%;
+  padding-left: 10px;
+  border: 0;
+  font-size: 16px;
+  height: 48px;
+  background-color: var(--bg_default);
 }
 
-.select-list{
-    width: 13%;
-    border-left: var(--lines-color) 1px solid;
-    padding: 5px 15px;
+.select-list {
+  width: 15%;
+  border-left: var(--lines-color) 1px solid;
+  height: 48px;
+  padding: 0px 10px 0px 0px;
+  box-sizing: border-box;
 }
 
-.select-list span{
-    font-size: 12px;
-    padding-bottom: 3px;
-    padding-left: 4px;
+.select-list span {
+  font-size: 12px;
+  padding-bottom: 3px;
+  padding-left: 10px;
 }
 
-.select-list select{
-    border: 0px;
-    width: 100%;
-    font-size: 14px;
+.select-list select {
+  border: 0px;
+  width: 100%;
+  font-size: 14px;
 }
 
-.search-result .row{
-    flex-wrap: wrap;
-    gap:1px;
+/* search bar end */
+
+/* search result start */
+
+.search-result .row {
+  flex-wrap: wrap;
+  gap: 33px;
+  justify-content: start;
 }
 
-.card-result{
-    width: 18%;
-    margin-top: 30px;
-    background-color: var(--bg_default);
-    border-radius: 10px;
-    overflow: hidden;
+.card-result {
+  width: 18%;
+  margin-top: 30px;
+  background-color: var(--bg_default);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.card-result .card-container{
-    width:90%;
+.card-result .card-container {
+ padding: 15px 5%;
 }
 
-.card-result img{
-    width:100%;
-    margin-bottom: 10px;
-    height: 150px;
+.img-container{
+  height: 140px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.card-result h3{
-    font-size: 12px;
-    font-weight: 400;
+.img-container img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.card-result h4{
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.card-result h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 400;
 }
 
-.card-result .stars{
-    margin-bottom: 10px;
+.card-result h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-result .stars {
+  margin-bottom: 10px;
+  letter-spacing: -5px; 
 
 }
 
-.card-result ion-icon{
-    color: rgb(229, 164, 33);
+.card-result ion-icon,
+.details-section .stars {
+  color: rgb(229, 164, 33);
+
 }
 
-.card-result p{
-    font-size: 12px;
-    margin-bottom: 15px;
-    color: var(--body-text);
+.card-result p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: var(--body-text);
 }
 
-footer .container{
-  margin: 40px;  
+footer .container {
+  margin: 40px;
 }
 
-footer .row{
+footer .row {
   justify-content: center;
 }
 
-footer ion-icon{
+footer ion-icon {
   color: red;
   font-size: 25px;
   margin: 0px 10px;
+}
+
+/* 
+
+details section 
+*/
+
+.details-section {
+  background-color: var(--body-text);
+  color: var(--bg_default);
+  padding: 30px 0px;
+}
+
+.details-section .details-container {
+  width: 60%;
+  margin: auto;
+}
+
+.details-section h3 {
+  color: var(--brand-secondary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.details-section h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.details-section p {
+  margin-top: 15px;
+  width: 65%;
 }
