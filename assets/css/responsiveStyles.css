@@ -1,0 +1,173 @@
+@media screen and (min-width: 1800px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .details-section .details-container {
+    width: 68%;
+  }
+  .subtopics-container {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-result .img-container {
+    height: 130px;
+  }
+  .details-section .details-container {
+    width: 92%;
+  }
+  .subtopics-container {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .search-input {
+    font-size: 14px;
+  }
+
+  .select-list span {
+    font-size: 11px;
+  }
+
+  .select-list select {
+    font-size: 12px;
+  }
+
+  .search-result .row {
+    gap: 2.5%;
+  }
+
+  .card-result {
+    width: 23%;
+  }
+
+  .card-result .img-container {
+    height: 130px;
+  }
+
+  .details-section .details-content {
+    width: 55%;
+  }
+
+  .subtitles-content {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .blue_shape {
+    border-top: 50px solid #087aabf2;
+  }
+
+  .green_shape {
+    border-top: 50px solid var(--brand-secondary);
+  }
+
+  .title-content .title-welcome {
+    font-size: 20px;
+  }
+
+  .title-content p {
+    font-size: 15px;
+  }
+
+  .search-result .row {
+    gap: 5%;
+  }
+
+  .card-result {
+    width: 30%;
+  }
+
+  .details-card {
+    position: static;
+  }
+
+  .details-card {
+    margin-bottom: 30px;
+  }
+
+  .details-section .details-content {
+    width: 100%;
+  }
+
+  .subtitles-content {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 567px) {
+  .btn span {
+    display: none;
+  }
+
+  .blue_shape {
+    border-top: 25px solid #087aabf2;
+    border-right: 100vw solid transparent;
+  }
+
+  .green_shape {
+    border-top: 25px solid var(--brand-secondary);
+    border-left: 100vw solid transparent;
+  }
+
+  .title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .title-content {
+    width: 92%;
+    margin: auto;
+  }
+
+  .search-bar {
+    padding-left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: var(--lines-color) 1px solid;
+  }
+
+  .search .row {
+    flex-direction: column;
+  }
+
+  .lists {
+    width: 100%;
+  }
+
+  .lists > :nth-child(1) {
+    border: 0;
+  }
+
+  .search-result .row {
+    gap: 10%;
+  }
+
+  .card-result {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search-result .row {
+    gap: 0%;
+  }
+
+  .card-result {
+    width: 100%;
+  }
+
+  .details-card {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+}
