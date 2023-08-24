@@ -237,11 +237,12 @@ nav {
 
 .card-result .stars {
   margin-bottom: 10px;
-  letter-spacing: -5px;
+  letter-spacing: -7px;
 }
 
 .card-result ion-icon,
-.details-section .stars {
+.details-section .stars,
+.favorites-bar .stars {
   color: rgb(229, 164, 33);
 }
 
@@ -254,6 +255,63 @@ nav {
 }
 
 /* search result end */
+
+/* favorites start */
+
+.favorites-bar {
+  background-color: var(--bg_default);
+  padding: 15px 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+
+.favorites-bar .row {
+  justify-content: start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.favorites-bar .card {
+  width: 9%;
+  margin-top: 15px;
+  background-color: var(--bg_default);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.favorites-bar .card .img-container {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.favorites-bar .card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favorites-bar .favorites-text {
+  padding: 5px 10px;
+}
+
+.favorites-bar .favorites-text h4 {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorites-text .stars {
+  letter-spacing: -5px;
+}
+
+/* favorites end */
 
 /* footer start */
 
@@ -276,7 +334,6 @@ footer ion-icon {
 /* ******************************************** */
 
 /* details page */
-
 
 /* details section start */
 
@@ -305,6 +362,10 @@ footer ion-icon {
   font-weight: 700;
 }
 
+.details-section .stars {
+  letter-spacing: -7px;
+}
+
 .details-section .details-para {
   color: var(--bg_default);
   margin-top: 15px;
@@ -312,7 +373,6 @@ footer ion-icon {
 }
 
 /* details section end */
-
 
 /* sub titles start */
 
