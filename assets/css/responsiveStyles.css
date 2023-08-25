@@ -24,10 +24,6 @@
   .subtopics-container {
     width: 92%;
   }
-
-  .favorites-bar .card {
-    width: 12%;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -61,9 +57,6 @@
 
   .subtitles-content {
     width: 55%;
-  }
-  .favorites-bar .card {
-    width: 15%;
   }
 }
 
@@ -106,10 +99,6 @@
 
   .subtitles-content {
     width: 100%;
-  }
-
-  .favorites-bar .card {
-    width: 20%;
   }
 }
 
@@ -165,9 +154,6 @@
     width: 45%;
   }
 
-  .favorites-bar .card {
-    width: 25%;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -177,10 +163,6 @@
 
   .card-result {
     width: 100%;
-  }
-
-  .favorites-bar .card {
-    width: 47%;
   }
 }
 
